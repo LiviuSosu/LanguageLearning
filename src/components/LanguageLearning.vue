@@ -1,14 +1,44 @@
 <script>
+import WordImage from './LanguageLearning/WordImage.vue'
+
 export default {
   data() {
     return {
-      text: 'Edit me'
+     options: ['A', 'B', 'C'],
+    value: 'B'
+    }
+  },
+components: {
+    WordImage
+  },
+  methods: {
+  greet(event) {
+    // `this` inside methods points to the current active instance
+    alert(`Hello ${event}!`)
+    // `event` is the native DOM event
+    //if (event) {
+      //alert(event.target.tagName)
+    //}
     }
   }
 }
 </script>
 
 <template>
-  <h2>Text Input</h2>
- <input v-model="text"> {{ text }}
+ <div class="dropdown">
+    <button
+      class="btn btn-primary dropdown-toggle"
+      type="button" id="dropdownMenuButton1"
+      data-bs-toggle="dropdown"
+      aria-expanded="false">
+      Dropdown button: {{value}}
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" role="menu">
+      <li v-for="option in options" :key="option">
+        <a class="dropdown-item" @click="greet(option); value = option" >{{option}}</a>
+      </li>
+    </ul>
+  </div>
+
+<WordImage/>
  </template>
