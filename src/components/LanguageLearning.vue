@@ -1,11 +1,13 @@
 <script>
 import WordImage from './LanguageLearning/WordImage.vue'
+import {getData} from '../services/index.js';
 
 export default {
   data() {
     return {
      options: ['A', 'B', 'C'],
-    value: 'B'
+     value: 'B',
+     someTest: getData()
     }
   },
 components: {
@@ -41,4 +43,6 @@ components: {
   </div>
 
 <WordImage/>
+
+{{someTest}}
  </template>
