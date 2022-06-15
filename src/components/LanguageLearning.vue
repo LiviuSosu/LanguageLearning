@@ -1,13 +1,14 @@
 <script>
 import WordImage from './LanguageLearning/WordImage.vue'
-import {getData} from '../services/index.js';
+import RestResource from '../services/index.js';
+const restResourceService = new RestResource();
 
 export default {
   data() {
     return {
      options: ['A', 'B', 'C'],
      value: 'B',
-     someTest: getData()
+     someTest: restResourceService.getData()
     }
   },
 components: {
