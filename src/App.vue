@@ -47,7 +47,7 @@ export default {
           <router-link class="nav-link active" to="/">Home</router-link>
         </li>
         <li class="nav-item">
-         <router-link class="nav-link" to="/admin">About</router-link>
+         <router-link class="nav-link" to="/admin">Admin</router-link>
         </li>    
       </ul>
     </div>

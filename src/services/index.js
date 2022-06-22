@@ -5,7 +5,3 @@ export default class RestResource {
     }
   
   }
-
-  // export function getData() {
-  //   return "hello world";
-  // }
