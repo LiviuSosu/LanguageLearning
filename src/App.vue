@@ -32,6 +32,7 @@ export default {
 //for starting 
 //  npm run build
 // npm run dev
+//On Windows Shift + Alt + F
 <template>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">

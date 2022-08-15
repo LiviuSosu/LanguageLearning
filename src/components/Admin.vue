@@ -6,11 +6,15 @@ export default {
         word: "",
         value: "B",
         options: ["A", "B", "C"],
+        category: ""
       },
     };
   },
   methods: {
-    greet(model) {
+    inputCategory(model){
+          alert(`Hello ` + model.category);
+    },
+    inputWord(model) {
       alert(`Hello ` + model.word);
     },
     categorySelected(category) {
@@ -21,7 +25,19 @@ export default {
 </script>
 
 <template>
-  <h3>This is the admin view</h3>
+  <h3>Add new category</h3>
+  <input v-model="model.category" placeholder="add category" />
+  <button
+    type="button"
+    class="btn btn-primary"
+    @click="
+      inputCategory(model);
+      value = model;
+    "
+  >
+    Add Category
+  </button>
+  <h3>Add new word</h3>
   <div class="dropdown">
     <button
       class="btn btn-primary dropdown-toggle"
@@ -34,7 +50,14 @@ export default {
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" role="menu">
       <li v-for="option in model.options" :key="option">
-        <a class="dropdown-item" @click="categorySelected(option); value = option;">{{ option }}</a>
+        <a
+          class="dropdown-item"
+          @click="
+            categorySelected(option);
+            value = option;
+          "
+          >{{ option }}</a
+        >
       </li>
     </ul>
   </div>
@@ -44,10 +67,10 @@ export default {
     type="button"
     class="btn btn-primary"
     @click="
-      greet(model);
+      inputWord(model);
       value = model;
     "
   >
-    Primary
+     Add Word
   </button>
 </template>
