@@ -36,7 +36,7 @@ export default {
       data-bs-toggle="dropdown"
       aria-expanded="false"
     >
-      Dropdown button: {{ value }}
+      Category: {{ value }}
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" role="menu">
       <li v-for="option in options" :key="option">
