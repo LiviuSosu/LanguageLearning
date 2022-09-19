@@ -29,6 +29,7 @@ export default {
 //https://www.vuemastery.com/blog/vue-router-a-tutorial-for-vue-3/ 
 //for starting npm run build 
 // npm run dev 
+//https://vitest.dev/guide/ TESTING!!!!
 //On Windows Shift + Alt + F
 //https://v2.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html?redirect=true
 <template>
