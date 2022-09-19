@@ -1,6 +1,10 @@
 //https://www.digitalocean.com/community/tutorials/vuejs-vue-testing
+//https://vitest.dev/guide/
 
-it('renders without crashing', () => {
-  var x =2;
-   expect(x).toBe(2);
-});
+import { assert, expect, test } from 'vitest'
+
+test('Math.sqrt()', () => {
+  expect(Math.sqrt(4)).toBe(2)
+  expect(Math.sqrt(144)).toBe(12)
+  expect(Math.sqrt(2)).toBe(Math.SQRT2)
+})

@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview --port 5050",
-    "test": "vite test"
+    "test": "vitest"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
@@ -17,5 +17,8 @@
     "vite": "^3.1.2",
     "vue": "^3.2.39",
     "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "vitest": "^0.23.4"
   }
 }
