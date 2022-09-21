@@ -1,10 +1,13 @@
 //https://www.digitalocean.com/community/tutorials/vuejs-vue-testing
 //https://vitest.dev/guide/
 //https://youtu.be/FJRuG85tXV0?t=744
+//https://youtu.be/FJRuG85tXV0
 
-import { assert, expect, test } from 'vitest'
+import { assert, test } from 'vitest'
 import *  as vi from '../__mocks__/axios';
 import {render, screen} from "@testing-library/vue"
+import {describe, it, expect} from "vitest";
+import {App} from './App.vuejs'
 
 //vi.mock('axios')
 
