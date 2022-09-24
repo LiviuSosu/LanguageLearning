@@ -3,6 +3,8 @@
 //https://youtu.be/FJRuG85tXV0?t=744
 //https://youtu.be/FJRuG85tXV0
 
+//https://www.thisdot.co/blog/getting-started-with-vue-and-vitest
+
 import { assert, test } from 'vitest'
 import *  as vi from '../__mocks__/axios';
 import {render, screen} from "@testing-library/vue"
