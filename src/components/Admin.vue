@@ -26,7 +26,7 @@ export default {
 
 <template>
   <h3>Add new category</h3>
-  <input v-model="model.category" placeholder="add category" />
+  <input v-model="model.category" placeholder="add category"/>
   <button
     type="button"
     class="btn btn-primary"
@@ -34,9 +34,7 @@ export default {
       inputCategory(model);
       value = model;
     "
-  >
-    Add Category
-  </button>
+  >Add Category</button>
   <h3>Add new word</h3>
   <div class="dropdown">
     <button
@@ -71,6 +69,6 @@ export default {
       value = model;
     "
   >
-     Add Word
+  Add Word
   </button>
 </template>
