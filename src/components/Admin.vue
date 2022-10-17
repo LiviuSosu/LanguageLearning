@@ -1,4 +1,6 @@
 <script>
+import axios from 'axios'
+
 export default {
   data() {
     return {
@@ -21,11 +23,19 @@ export default {
       alert(`You've selected ` + category);
     },
   },
+
+   mounted () {
+    axios
+      .get('https://desolate-everglades-09574.herokuapp.com/')
+      .then(response => console.log(response.data))
+      .catch(error => console.log(error))
+  }
 };
 </script>
 
 <template>
   <h3>Add new category</h3>
+    {{ info2 }}
   <input v-model="model.category" placeholder="add category"/>
   <button
     type="button"
